@@ -1,0 +1,180 @@
+@dpr: 2px;
+@globalcolor: #ffffff;
+html,
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0
+}
+
+.container {
+    position: relative; //flex-direction: column; //flex: 1;
+    text-align: center;
+    font-size: 24/@dpr;
+    width: 100%;
+    height: 100%; 
+    overflow: hidden;
+}
+
+.top {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #00c662;
+    height: 458/@dpr;
+    width: 100%;
+    font-weight: bolder;
+    color: @globalcolor; // border-bottom-style: dashed;
+    // border-bottom: 1px solid #00c662;
+}
+
+.info {
+    margin-bottom: 46px;
+    margin-top: 46px;
+    line-height: 42/@dpr;
+}
+
+.integral {
+    display: flex;
+    flex-direction: row;
+    justify-content: center; //justify-content: space-around;
+    .integral-pic {
+        background-image: url(../images/point.png);
+        width: 44/@dpr;
+        height: 30/@dpr;
+        background-size: 32/@dpr 30/@dpr;
+        background-repeat: no-repeat;
+    }
+}
+
+.exchange {
+    width: 96/@dpr;
+    height: 42/@dpr;
+    border: none;
+    background-color: #00c662;
+    font-weight: bolder;
+    color: @globalcolor;
+}
+
+.photo {
+    width: 100%;
+    height: 70px;
+    background-color: @globalcolor;
+    background-image: -webkit-radial-gradient(circle, transparent, transparent 31px, #00c662 30px, #00c662);
+    background-image: -moz-radial-gradient(circle, transparent, transparent 31px, #00c662 30px, #00c662);
+    background-image: radial-gradient(circle, transparent, transparent 31px, #00c662 30px, #00c662);
+    background-repeat: no-repeat;
+}
+
+.wavy-line {
+    width: 100%;
+    height: 10px;
+    background-size: 20px 20px;
+    background-repeat: no-repeat;
+}
+
+.detail-info {
+    width: 100%;
+    height: 778/@dpr;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.display-x {
+    // padding-left: 10%;
+    // padding-right: 10%;
+    width: 90%;
+    color: #414141;
+    font-size: 30/@dpr;
+    font-weight: bold;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    border-bottom: 1px solid #e9e9e9;
+    line-height: 178/@dpr;
+    .oimg {
+        width: 30/@dpr;
+        height: 178/@dpr;
+        background-size: 30/@dpr 30/@dpr;
+        background-image: url(../images/order.png);
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    .rimg {
+        width: 30/@dpr;
+        height: 178/@dpr;
+        background-size: 30/@dpr 30/@dpr;
+        background-image: url(../images/address-checked.png);
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    .simg {
+        width: 30/@dpr;
+        height: 178/@dpr;
+        background-size: 30/@dpr 30/@dpr;
+        background-image: url(../images/service.png);
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+}
+
+footer {
+    border-top: 1px solid #e9e9e9;
+    position: absolute;
+    background-color: blueviolet;
+    height: 98/@dpr;
+    width: 100%; //position: absolute;
+    bottom: 0px;
+    padding-bottom: 10px;
+}
+
+.menu {
+    height: 98/@dpr;
+    background-color: @globalcolor;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    font-size: 24/@dpr;
+    color: #525252;
+    font-weight: bold; //padding: 20px;
+}
+
+.face {
+    height: 42/@dpr;
+    width: 42/@dpr;
+    margin-top: 15px;
+    background-image: url(../images/home-active.png);
+    background-repeat: repeat-x;
+    background-size: 42/@dpr 42/@dpr;
+    background-color: @globalcolor;
+}
+
+.classify {
+    height: 42/@dpr;
+    width: 42/@dpr;
+    margin-top: 15px;
+    background-image: url(../images/category.png);
+    background-repeat: repeat-x;
+    background-size: 42/@dpr 42/@dpr;
+    background-color: @globalcolor;
+}
+
+.cart {
+    height: 42/@dpr;
+    width: 42/@dpr;
+    margin-top: 15px;
+    background-image: url(../images/cart.png);
+    background-repeat: repeat-x;
+    background-size: 42/@dpr 42/@dpr;
+    background-color: @globalcolor;
+}
+
+.user {
+    height: 42/@dpr;
+    width: 42/@dpr;
+    margin-top: 15px;
+    background-image: url(../images/user.png);
+    background-repeat: repeat-x;
+    background-size: 42/@dpr 42/@dpr;
+    background-color: @globalcolor;
+}

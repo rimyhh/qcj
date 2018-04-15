@@ -1,0 +1,199 @@
+@dpr: 2px;
+@globalcolor: #ffffff;
+@gwidth: 750/@dpr;
+html,
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0
+}
+
+.container {
+    display: flex;
+    flex-direction: column; //flex: 1;
+    //text-align: center;
+    font-size: 24/@dpr;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+header {
+    background-color: @globalcolor; //height: 138/@dpr;
+    width: 100%; //position: absolute;
+    font-size: 30/@dpr;
+    font-weight: bold;
+    color: #404040;
+    top: 0px; //align-items: center;
+    height: 142/@dpr;
+    padding: 76/@dpr 36/@dpr 38/@dpr 38/@dpr;
+    border-bottom: 1px solid #dfdfdf; //justify-content: space-around; //justify-content: space-around;
+    display: flex;
+    flex-direction: row; //flex: 1;
+    div {
+        height: auto;
+        line-height: 142/@dpr;
+    }
+    .cartnum {
+        width: 50%; //margin-left: 36/@dpr;
+    }
+    .handle {
+        width: 50%;
+        text-align: right;
+        padding-right: 76/@dpr;
+    }
+}
+
+.middle {
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    overflow-x: hidden;
+    overflow-y: auto; //margin-top: 5px;
+    background-color: #f8f8f8;
+}
+
+.check {
+    width: 10%;
+    height: 228/@dpr;
+    background-image: url(../images/check-btn.png);
+    background-repeat: no-repeat;
+    background-size: 44/@dpr 44/@dpr;
+    background-position-y: center;
+    background-position-x: center;
+}
+
+.goodslist {
+    width: 100%; //flex: 1; //填充height
+    //overflow-x: hidden;
+    overflow-y: auto; //padding-left: 5%;
+    //padding-right: 5%;
+    margin-bottom: 128/@dpr;
+    border-top: 1px solid #f0f0f0;
+}
+
+.goods-item {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    border-bottom: 1px solid #f0f0f0;
+    margin-top: 26/@dpr;
+    background-color: #ffffff;
+}
+
+.price {
+    font-size: 24/@dpr;
+    font-weight: bold;
+    color: #fe6161;
+}
+
+.sold {
+    color: #a0a0a0;
+}
+
+.goods-img {
+    width: 228/@dpr;
+    height: 228/@dpr;
+    background-image: url(../images/goods.jpg);
+    background-size: 228/@dpr 228/@dpr;
+}
+
+.goods-info {
+    height: 198/@dpr;
+    padding-top: 8;
+    font-weight: bold;
+    color: #414141;
+    div {
+        padding-top: 18;
+        line-height: 10px;
+    }
+    .delpic {
+        margin-top: -60px;
+        margin-left: 140px;
+        display: flex;
+        flex-direction: row;
+        text-align: center;
+        div {
+            border: 1px solid #dfdfdf;
+            width: 52/@dpr;
+            height: 44/@dpr;
+        }
+        .sub-icon {
+            background-image: url(../images/sub-icon.jpg);
+            background-size: 15/@dpr 15/@dpr;
+            background-repeat: no-repeat;
+            background-position-y: center;
+            background-position-x: center;
+        }
+        .add-icon {
+            background-image: url(../images/add-icon.jpg);
+            background-size: 15/@dpr 15/@dpr;
+            background-repeat: no-repeat;
+            background-position-y: center;
+            background-position-x: center;
+        }
+    }
+}
+
+footer {
+    background-color: blueviolet;
+    height: 98/@dpr;
+    width: 100%;
+    position: absolute;
+    bottom: 0px;
+    border-top: 1px solid #f0f0f0;
+    padding-bottom: 12/@dpr;
+    padding-top: 18/@dpr;
+}
+
+.menu {
+    height: 98/@dpr;
+    background-color: @globalcolor;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    font-size: 24/@dpr;
+    color: #525252;
+    font-weight: bold; //padding: 20px;
+}
+
+.face {
+    height: 42/@dpr;
+    width: 42/@dpr;
+    margin-top: 15px;
+    background-image: url(../images/home-active.png);
+    background-repeat: repeat-x;
+    background-size: 42/@dpr 42/@dpr;
+    background-color: @globalcolor;
+}
+
+.classify {
+    height: 42/@dpr;
+    width: 42/@dpr;
+    margin-top: 15px;
+    background-image: url(../images/category.png);
+    background-repeat: repeat-x;
+    background-size: 42/@dpr 42/@dpr;
+    background-color: @globalcolor;
+}
+
+.cart {
+    height: 42/@dpr;
+    width: 42/@dpr;
+    margin-top: 15px;
+    background-image: url(../images/cart.png);
+    background-repeat: repeat-x;
+    background-size: 42/@dpr 42/@dpr;
+    background-color: @globalcolor;
+}
+
+.user {
+    height: 42/@dpr;
+    width: 42/@dpr;
+    margin-top: 15px;
+    background-image: url(../images/user.png);
+    background-repeat: repeat-x;
+    background-size: 42/@dpr 42/@dpr;
+    background-color: @globalcolor;
+}

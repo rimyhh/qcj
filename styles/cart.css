@@ -1,0 +1,210 @@
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+.container {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+          flex-direction: column;
+  font-size: 12px;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+header {
+  background-color: #ffffff;
+  width: 100%;
+  font-size: 15px;
+  font-weight: bold;
+  color: #404040;
+  top: 0px;
+  height: 71px;
+  padding: 38px 18px 19px 19px;
+  border-bottom: 1px solid #dfdfdf;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+          flex-direction: row;
+}
+header div {
+  height: auto;
+  line-height: 71px;
+}
+header .cartnum {
+  width: 50%;
+}
+header .handle {
+  width: 50%;
+  text-align: right;
+  padding-right: 38px;
+}
+.middle {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+          flex-direction: row;
+  overflow-x: hidden;
+  overflow-y: auto;
+  background-color: #f8f8f8;
+}
+.check {
+  width: 10%;
+  height: 114px;
+  background-image: url(../images/check-btn.png);
+  background-repeat: no-repeat;
+  background-size: 22px 22px;
+  background-position-y: center;
+  background-position-x: center;
+}
+.goodslist {
+  width: 100%;
+  overflow-y: auto;
+  margin-bottom: 64px;
+  border-top: 1px solid #f0f0f0;
+}
+.goods-item {
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+          flex-direction: row;
+  border-bottom: 1px solid #f0f0f0;
+  margin-top: 13px;
+  background-color: #ffffff;
+}
+.price {
+  font-size: 12px;
+  font-weight: bold;
+  color: #fe6161;
+}
+.sold {
+  color: #a0a0a0;
+}
+.goods-img {
+  width: 114px;
+  height: 114px;
+  background-image: url(../images/goods.jpg);
+  background-size: 114px 114px;
+}
+.goods-info {
+  height: 99px;
+  padding-top: 8;
+  font-weight: bold;
+  color: #414141;
+}
+.goods-info div {
+  padding-top: 18;
+  line-height: 10px;
+}
+.goods-info .delpic {
+  margin-top: -60px;
+  margin-left: 140px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+          flex-direction: row;
+  text-align: center;
+}
+.goods-info .delpic div {
+  border: 1px solid #dfdfdf;
+  width: 26px;
+  height: 22px;
+}
+.goods-info .delpic .sub-icon {
+  background-image: url(../images/sub-icon.jpg);
+  background-size: 7.5px 7.5px;
+  background-repeat: no-repeat;
+  background-position-y: center;
+  background-position-x: center;
+}
+.goods-info .delpic .add-icon {
+  background-image: url(../images/add-icon.jpg);
+  background-size: 7.5px 7.5px;
+  background-repeat: no-repeat;
+  background-position-y: center;
+  background-position-x: center;
+}
+footer {
+  background-color: blueviolet;
+  height: 49px;
+  width: 100%;
+  position: absolute;
+  bottom: 0px;
+  border-top: 1px solid #f0f0f0;
+  padding-bottom: 6px;
+  padding-top: 9px;
+}
+.menu {
+  height: 49px;
+  background-color: #ffffff;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+          flex-direction: row;
+  -webkit-justify-content: space-around;
+          justify-content: space-around;
+  font-size: 12px;
+  color: #525252;
+  font-weight: bold;
+}
+.face {
+  height: 21px;
+  width: 21px;
+  margin-top: 15px;
+  background-image: url(../images/home-active.png);
+  background-repeat: repeat-x;
+  background-size: 21px 21px;
+  background-color: #ffffff;
+}
+.classify {
+  height: 21px;
+  width: 21px;
+  margin-top: 15px;
+  background-image: url(../images/category.png);
+  background-repeat: repeat-x;
+  background-size: 21px 21px;
+  background-color: #ffffff;
+}
+.cart {
+  height: 21px;
+  width: 21px;
+  margin-top: 15px;
+  background-image: url(../images/cart.png);
+  background-repeat: repeat-x;
+  background-size: 21px 21px;
+  background-color: #ffffff;
+}
+.user {
+  height: 21px;
+  width: 21px;
+  margin-top: 15px;
+  background-image: url(../images/user.png);
+  background-repeat: repeat-x;
+  background-size: 21px 21px;
+  background-color: #ffffff;
+}

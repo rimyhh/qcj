@@ -1,0 +1,290 @@
+@dpr: 2px;
+@globalcolor: #ffffff;
+@gwidth: 750/@dpr;
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0
+}
+
+.container {
+  display: flex;
+  flex-direction: column; //flex: 1;
+  text-align: center;
+  font-size: 24/@dpr;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+header {
+  background-color:@globalcolor;
+  height: 138/@dpr;
+  width: 100%; //position: absolute;
+  top: 0px; //align-items: center;
+  justify-content: space-between; //justify-content: space-around;
+  display: flex; //flex-direction: row; //flex: 1;
+  ;
+  .image {
+    width: 180/@dpr;
+    height: 72/@dpr; //background-color: burlywood;
+    margin-top: 15px;
+    margin-left: 15px; //float: left;
+    background-image: url(../images/logo.png);
+    background-size: 180/@dpr 72/@dpr;
+  }
+  .search {
+    width: 486/@dpr;
+    height: 70/@dpr;
+    background-color: @globalcolor;
+    margin-top: 15px;
+    margin-right: 15px;
+    display: flex;
+    flex-direction: row; //justify-content: space-around;
+    //float:left;
+  }
+}
+
+.text {
+  border: 1px solid rgb(180, 180, 180);
+  border-radius: 8px 0px 0px 8px; //弧度的大小 数字越大 弯的越明显
+  border-right: none;
+  background-color: #f4f4f4;
+  font-weight: bolder;
+  font-size: 24/@dpr;
+  color: #8a8a8a;
+  width: 480/@dpr;
+  height: 80/@dpr; // background:url(../images/search-btn.png) no-repeat;
+  background-position: 195px; 
+  // &:after{
+  //   content: '';
+  //   background-image: ;
+  //   width: 36/@dpr;
+  //   height: 36/@dpr;
+  // }
+}
+
+.btn {
+  border: 1px solid rgb(180, 180, 180);
+  border-radius: 0px 8px 8px 0px;  //左上  右上  右下 左下
+  margin-right: -2px;
+  border-left: none;
+  width: 36;
+  height: 40;
+  background: url(../images/search-btn.png) no-repeat;
+  background-size: 40/@dpr 40/@dpr;
+  background-color: #f4f4f4; //border: none;
+  background-position: center;
+  background-position-x: 7px;
+}
+
+.middle {
+  flex: 1; //填充height
+  background-color: @globalcolor; //height: 1100/@dpr;
+  width: 100%; //position: absolute;
+  overflow-x: hidden;
+  overflow-y: auto; //top: 138/@dpr;
+  //bottom: 100/@dpr;
+  //padding-top: 138/@dpr;
+  //padding-bottom: 100/@dpr;
+  .list {
+    height: 224/@dpr;
+    background-color:@globalcolor;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    font-size: 24/@dpr;
+    color: #525252;
+    font-weight: bold; //padding: 20px;
+  }
+}
+
+.one {
+  height: 142/@dpr;
+  width: 104/@dpr;
+  margin-top: 15px;
+  background-image: url(../images/nav_1.png);
+  background-repeat: repeat-x;
+  background-size: 104/@dpr 104/@dpr;
+  background-color: @globalcolor;
+}
+
+.two {
+  height: 142/@dpr;
+  width: 104/@dpr;
+  margin-top: 15px;
+  background-image: url(../images/nav_2.png);
+  background-repeat: repeat-x;
+  background-size: 104/@dpr 104/@dpr;
+  background-color: @globalcolor;
+}
+
+.three {
+  height: 142/@dpr;
+  width: 104/@dpr;
+  margin-top: 15px;
+  background-image: url(../images/nav_3.png);
+  background-repeat: repeat-x;
+  background-size: 104/@dpr 104/@dpr;
+  background-color: @globalcolor;
+}
+
+.four {
+  height: 142/@dpr;
+  width: 104/@dpr;
+  margin-top: 15px;
+  background-image: url(../images/nav_4.png);
+  background-repeat: repeat-x;
+  background-size: 104/@dpr 104/@dpr;
+  background-color: @globalcolor;
+}
+
+.qcj {
+  height: 280/@dpr;
+  width: 100%;
+  background-color: seagreen;
+  background-image: url(../images/slider.png);
+  background-size: 100% 280/@dpr;
+}
+
+.products {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 88/@dpr;
+  background-color: #f8f8f8;
+  font-size: 24/@dpr;
+  color: #848484;
+  font-weight: bolder;
+  line-height: 88/@dpr;//设置line-height与父级元素的height相等
+  text-align: center;//设置文本水平居中
+  >img:first-child {
+    margin-right: 10/@dpr;
+  }
+  >img:last-child {
+    margin-left: 10/@dpr;
+  } // &:before{
+  //   content: '';
+  //   width: 20/@dpr;
+  //   height: 6/@dpr;
+  //   background: url(../images/sub-icon.png) center center no-repeat;
+  //   background-size: cover;
+  //   margin-right: 10/@dpr;
+  // }
+  // &:after{
+  //   content: '';
+  //   width: 20/@dpr;
+  //   height: 6/@dpr;
+  //   background: url(../images/sub-icon.png) center center no-repeat;
+  //   background-size: cover;
+  //   margin-left: 10/@dpr;
+  // }
+}
+
+.showproducts {
+  width: 100%;
+  &::after {
+    content: '';
+    clear: both;
+    display: block; //块级元素才能清除浮动
+    //display: inline; //行级元素
+  }
+  >div {
+    float: left;
+    width: 50%; //padding: 0 10px;
+  }
+}
+
+.list-picture {
+  width: 100%;
+  height: 123px;
+  background-image: url(../images/goods.jpg);
+  background-size: auto 100%; //宽度自适应 高度固定
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.pdetails {
+  width: 100%;
+  display: flex;
+  position: relative;
+  margin-top: 5px;
+  text-align: center;
+  img {
+    position: absolute;
+    right: 5px;
+    bottom: 0px;
+  }
+}
+
+.price {
+  font-size: 24/@dpr;
+  color: #fe6161;
+  margin-left: 18px;
+}
+
+.sold {
+  color: #a0a0a0;
+}
+
+footer {
+  background-color: blueviolet;
+  height: 98/@dpr;
+  width: 100%; //position: absolute;
+  bottom: 0px;
+  padding-bottom: 12/@dpr;
+  padding-top: 18/@dpr;
+}
+
+.menu {
+  height: 98/@dpr;
+  background-color: @globalcolor;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  font-size: 24/@dpr;
+  color: #525252;
+  font-weight: bold; //padding: 20px;
+}
+
+.face {
+  height: 42/@dpr;
+  width: 42/@dpr;
+  margin-top: 15px;
+  background-image: url(../images/home-active.png);
+  background-repeat: repeat-x;
+  background-size: 42/@dpr 42/@dpr;
+  background-color: @globalcolor;
+}
+
+.classify {
+  height: 42/@dpr;
+  width: 42/@dpr;
+  margin-top: 15px;
+  background-image: url(../images/category.png);
+  background-repeat: repeat-x;
+  background-size: 42/@dpr 42/@dpr;
+  background-color: @globalcolor;
+}
+
+.cart {
+  height: 42/@dpr;
+  width: 42/@dpr;
+  margin-top: 15px;
+  background-image: url(../images/cart.png);
+  background-repeat: repeat-x;
+  background-size: 42/@dpr 42/@dpr;
+  background-color: @globalcolor;
+}
+
+.user {
+  height: 42/@dpr;
+  width: 42/@dpr;
+  margin-top: 15px;
+  background-image: url(../images/user.png);
+  background-repeat: repeat-x;
+  background-size: 42/@dpr 42/@dpr;
+  background-color: @globalcolor;
+}

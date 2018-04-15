@@ -1,0 +1,65 @@
+@dpr: 2px;
+@globalcolor: #ffffff;
+@gwidth: 750/@dpr;
+*{
+    box-sizing: border-box;
+}
+footer {
+    background-color: blueviolet;
+    height: 98/@dpr;
+    width: 100%; //position: absolute;
+    bottom: 0;
+    padding-bottom: 12/@dpr;
+    padding-top: 18/@dpr;
+  }
+  
+  .menu {
+    height: 98/@dpr;
+    background-color: @globalcolor;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    font-size: 24/@dpr;
+    color: #525252;
+    font-weight: bold; //padding: 20px;
+  }
+  
+  .face {
+    height: 42/@dpr;
+    width: 42/@dpr;
+    margin-top: 15px;
+    background-image: url(../images/home-active.png);
+    background-repeat: repeat-x;
+    background-size: 42/@dpr 42/@dpr;
+    background-color: @globalcolor;
+  }
+  
+  .classify {
+    height: 42/@dpr;
+    width: 42/@dpr;
+    margin-top: 15px;
+    background-image: url(../images/category.png);
+    background-repeat: repeat-x;
+    background-size: 42/@dpr 42/@dpr;
+    background-color: @globalcolor;
+  }
+  
+  .cart {
+    height: 42/@dpr;
+    width: 42/@dpr;
+    margin-top: 15px;
+    background-image: url(../images/cart.png);
+    background-repeat: repeat-x;
+    background-size: 42/@dpr 42/@dpr;
+    background-color: @globalcolor;
+  }
+  
+  .user {
+    height: 42/@dpr;
+    width: 42/@dpr;
+    margin-top: 15px;
+    background-image: url(../images/user.png);
+    background-repeat: repeat-x;
+    background-size: 42/@dpr 42/@dpr;
+    background-color: @globalcolor;
+  }

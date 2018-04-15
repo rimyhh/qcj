@@ -1,0 +1,201 @@
+@dpr: 2px;
+@globalcolor: #ffffff;
+@gwidth: 750/@dpr;
+html,
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0
+}
+
+.container {
+    display: flex;
+    flex-direction: column; //flex: 1;
+    //text-align: center;
+    font-size: 24/@dpr;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+header {
+    background-color: @globalcolor; //height: 138/@dpr;
+    width: 100%; //position: absolute;
+    top: 0px; //align-items: center;
+    padding: 10px;
+    justify-content: space-between; //justify-content: space-around;
+    display: flex; //flex-direction: row; //flex: 1;
+    ;
+    .search {
+        width: 90%;
+        height: 80/@dpr; //text-align: center;
+        background-color: @globalcolor;
+        padding: 30px 10px 10px 10px;
+        display: flex;
+        flex-direction: row; //justify-content: space-around;
+        //float:left;
+        .text {
+            border: 1px solid rgb(180, 180, 180);
+            border-radius: 8px 0px 0px 8px; //弧度的大小 数字越大 弯的越明显
+            border-right: none;
+            background-color: #f4f4f4;
+            font-weight: bolder;
+            font-size: 24/@dpr;
+            color: #8b8b8b;
+            width: 100%;
+            height: 80/@dpr; // background:url(../images/search-btn.png) no-repeat;
+            background-position: 195px; // &:after{
+            //   content: '';
+            //   background-image: ;
+            //   width: 36/@dpr;
+            //   height: 36/@dpr;
+            // }
+        }
+        .btn {
+            border: 1px solid rgb(180, 180, 180);
+            border-radius: 0px 8px 8px 0px; //左上  右上  右下 左下
+            margin-right: -2px;
+            border-left: none;
+            width: 36;
+            height: 40;
+            background: url(../images/search-btn.png) no-repeat;
+            background-size: 40/@dpr 40/@dpr;
+            background-color: #f4f4f4; //border: none;
+            background-position: center;
+            background-position-x: 7px;
+        }
+    }
+}
+
+.middle {
+    display: flex;
+    flex: 1;
+    overflow-x: hidden;
+    overflow-y: auto;
+    flex-direction: row;
+    //margin-top: 5px;
+}
+
+.kind-list {
+    background-color: #f8f8f8;
+    width: 40%;
+    .kind-item {
+        line-height: 120/@dpr;
+        margin: 45/@dpr;
+        color: #424242;
+        font-size: 30/@dpr;
+    }
+}
+
+.products-list {
+    width: 100%; 
+    //flex: 1; //填充height
+    //overflow-x: hidden;
+    overflow-y: auto;
+    padding-left: 5%;
+    padding-right: 5%;
+    margin-bottom: 128/@dpr;
+    border-top: 1px solid #f0f0f0;
+}
+
+.lsit-item {
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.price {
+    font-size: 24/@dpr;
+    font-weight: bold;
+    color: #fe6161;
+}
+
+.sold {
+    color: #a0a0a0;
+}
+
+.goods-img {
+    width: 228/@dpr;
+    height: 228/@dpr;
+    background-image: url(../images/goods.jpg);
+    background-size: 228/@dpr 228/@dpr;
+}
+
+.goods-info {
+    height: 198/@dpr;
+    padding-top: 8;
+    font-weight: bold;
+    color: #414141;
+    div {
+        padding-top: 18;
+        line-height: 10px;
+    }
+    .cartpic{
+       margin-top: -40px;
+       margin-left: 130px;
+    }
+}
+
+footer {
+    background-color: blueviolet;
+    height: 98/@dpr;
+    width: 100%;
+    // position: absolute;
+    bottom: 0px;
+    border-top: 1px solid #f0f0f0;
+    padding-bottom: 12/@dpr;
+    padding-top: 18/@dpr;
+}
+
+.menu {
+    height: 98/@dpr;
+    background-color: @globalcolor;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    font-size: 24/@dpr;
+    color: #525252;
+    font-weight: bold; //padding: 20px;
+}
+
+.face {
+    height: 42/@dpr;
+    width: 42/@dpr;
+    margin-top: 15px;
+    background-image: url(../images/home-active.png);
+    background-repeat: repeat-x;
+    background-size: 42/@dpr 42/@dpr;
+    background-color: @globalcolor;
+}
+
+.classify {
+    height: 42/@dpr;
+    width: 42/@dpr;
+    margin-top: 15px;
+    background-image: url(../images/category.png);
+    background-repeat: repeat-x;
+    background-size: 42/@dpr 42/@dpr;
+    background-color: @globalcolor;
+}
+
+.cart {
+    height: 42/@dpr;
+    width: 42/@dpr;
+    margin-top: 15px;
+    background-image: url(../images/cart.png);
+    background-repeat: repeat-x;
+    background-size: 42/@dpr 42/@dpr;
+    background-color: @globalcolor;
+}
+
+.user {
+    height: 42/@dpr;
+    width: 42/@dpr;
+    margin-top: 15px;
+    background-image: url(../images/user.png);
+    background-repeat: repeat-x;
+    background-size: 42/@dpr 42/@dpr;
+    background-color: @globalcolor;
+}
